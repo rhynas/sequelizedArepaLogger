@@ -1,0 +1,57 @@
+#container{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(158, 158, 158, 0.6);
+	border-bottom: 2px solid gray;
+}
+#header{
+	text-align: center;
+	/*padding:1em;*/
+	background-color: black;
+	color: white;
+	font-family: verdana;
+	font
+}
+
+#description{
+	background-color: white;
+	border-bottom: 2px solid gray;
+	color: black;
+	font-size: 12px;
+	padding: 10px;
+
+}
+#content{
+
+	width: 100%;
+	font-family: verdana;
+	font-size: 12px;
+
+}
+
+#pending{
+	width: 55%;
+	margin-left: 20px;
+	display: block;
+	margin-bottom: 20px;
+	float: left;
+
+}
+#devoured{
+	width: 40%;
+	display: block;
+	float: left;
+}
+
+#mainImage{
+	width: 60%;
+	margin-top: 10px;
+}
+
+.create-update-form{
+	clear: left;
+	background-color: white;
+	border-top: 2px solid gray;
+	padding: 20px;
+	text-align: center;
+}

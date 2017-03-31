@@ -1,0 +1,32 @@
+
+<div id="pending">
+	{{#each arepas}}
+		{{#unless this.devoured}}
+			<p>{{this.id}}.  {{this.arepa_name}}</p>
+			<form class="newList" action="/{{this.id}}?_method=PUT" method="POST">
+				<button type="submit">Devour it...!</button>
+			</form>
+
+		{{/unless}}
+	{{/each}}	
+</div>
+
+<div id="devoured">
+	{{#each arepas}}
+		{{#if this.devoured}}
+			<p>{{this.id}}.  {{this.arepa_name}}</p>
+		{{/if}}
+	{{/each}}
+</div>
+
+
+<form class="create-update-form" action="/newArepa" method="POST">
+	<div class="form-group">
+		<input type="textarea" id="arepa_name" name="arepa_name">
+		<br>
+		<p>Enter the Arepa Name you want to eat</p>
+		<p>Click Submit button below</p>	
+		<button type="submit">Submit</buton>
+		<br>
+	</div>
+</form>

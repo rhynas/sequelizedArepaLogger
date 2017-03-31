@@ -1,0 +1,27 @@
+{
+  "name": "sequelizedarepalogger",
+  "version": "1.0.0",
+  "description": "Arepa logger is a restaurant app that let users input the name of the arepas they'd like to eat. Built with MySQL, Node, express,and sequelized",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhynas/sequelizedArepaLogger.git"
+  },
+  "author": "Rhyna Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhynas/sequelizedArepaLogger/issues"
+  },
+  "homepage": "https://github.com/rhynas/sequelizedArepaLogger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.6",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.2"
+  }
+}
