@@ -25,5 +25,9 @@
     "method-override": "^2.3.8",
     "mysql": "^2.13.0",
     "sequelize": "^3.30.2"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
   }
 }
