@@ -6,7 +6,7 @@
 var Sequelize = require("sequelize");
 
 // Creates mySQL connection using Sequelize
-var sequelize = new Sequelize("arepasseq_db_development", "root", "root", {
+var sequelize = new Sequelize("arepasseq_db", "root", "root", {
   port: 8889,
   host: "localhost",
   dialect: "mysql",

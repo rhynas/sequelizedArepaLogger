@@ -1,9 +1,9 @@
-
 <div id="pending">
 	{{#each arepas}}
 		{{#unless this.devoured}}
 			<p>{{this.id}}.  {{this.arepa_name}}</p>
-			<form class="newList" action="/{{this.id}}?_method=PUT" method="POST">
+			<form class="newList" action="/update?_method=PUT" method="POST">
+				<input type="hidden" name="burger_id" value={{this.id}}>
 				<button type="submit">Devour it...!</button>
 			</form>
 
@@ -20,7 +20,7 @@
 </div>
 
 
-<form class="create-update-form" action="/newArepa" method="POST">
+<form class="create-update-form" action="/" method="POST">
 	<div class="form-group">
 		<input type="textarea" id="arepa_name" name="arepa_name">
 		<br>
@@ -30,3 +30,5 @@
 		<br>
 	</div>
 </form>
+
+

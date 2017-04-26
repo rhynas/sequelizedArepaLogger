@@ -2,12 +2,12 @@
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
-    queryInterface.createTable('arepas',
-    {
+    return queryInterface
+    queryInterface.createTable('arepas',{
         id: {
           type: Sequelize.INTEGER,
-          primaryKey: true,
           autoIncrement: true,
+          primaryKey: true,
           allowNull: false
 
         },
@@ -17,16 +17,10 @@ module.exports = {
         },
         devoured: {
           type: Sequelize.BOOLEAN,
-          defaultValue: false
-        },
-        date_created: {
-          type: Sequelize.DATE,
+          defaultValue: false,
           allowNull: false
-        },
-        date_devoured: {
-          type: Sequelize.DATE
         }
-    })
+    });
   },
 
   down: function (queryInterface, Sequelize) {
